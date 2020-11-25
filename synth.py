@@ -22,7 +22,6 @@ from synthtool.languages import python
 
 # Use the microgenerator for now since we want to pin the generator version.
 gapic = gcp.GAPICBazel()
-#gapic = gcp.GAPICMicrogenerator()
 
 common = gcp.CommonTemplates()
 
@@ -35,7 +34,6 @@ library = gapic.py_library(
      version="v1beta1",
      bazel_target="//google/cloud/aiplatform/v1beta1:aiplatform-v1beta1-py",
 )
-#library = gapic.py_library("aiplatform", "v1beta1")
 
 s.move(
     library,

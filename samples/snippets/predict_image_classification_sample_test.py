@@ -33,4 +33,4 @@ def test_ucaip_generated_predict_image_classification_sample(capsys):
     )
 
     out, _ = capsys.readouterr()
-    assert 'string_value: "daisy"' in out
+    assert 'daisy' in out
